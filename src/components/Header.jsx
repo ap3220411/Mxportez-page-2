@@ -1,11 +1,12 @@
 import React from 'react';
 import './Header.css'; // Import your CSS file
+import logo from  "./image/image.png"
 
 function Header() {
   return (
     <div className="headerr">
-    <header className="header">
-      <h1 className="logo">BrainyLingo</h1>
+    <header className="header" style={{margin:"auto"}}>
+      <h1 className="logo"><img src={logo}/><span>BrainyLingo</span></h1>
       <nav>
         <ul className="nav-links">
           <li><a href="#">Home</a></li>
@@ -17,7 +18,7 @@ function Header() {
       </nav>
       <button className="sign-up-btn" >Sign out</button>
     </header>
-    <div className='headerrr'> <span style={{color:'blue' }}>The Lost City Of</span> Futher Earth </div>
+    <div className='headerrr'> <span className='two-color'>The Lost City Of</span> Futher Earth </div>
    
     </div>
   );
